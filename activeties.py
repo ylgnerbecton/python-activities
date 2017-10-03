@@ -18,7 +18,7 @@ while x>=0:
 print("Fogo!")
 
 # INT. PROG. PYTHON CAP. 5 | EXERCÍCIO 5.4
-fim=int(input("Digite o último número a imprimir:"))
+fim=int(input("Digite o ultimo numero a imprimir:"))
 x = 0
 while x <= fim:
     print(x)
@@ -40,15 +40,15 @@ while x <= 10:
 # INT. PROG. PYTHON CAP. 5 | EXERCÍCIO 5.7
 n = int(input("Tabuada de:"))
 inicio = int(input("De:"))
-fim = int(input("Até:"))
+fim = int(input("Ate:"))
 x = inicio
 while x <= fim:
     print("%d x %d = %d" % (n, x, n*x) )
     x = x + 1
 
 # INT. PROG. PYTHON CAP. 5 | EXERCÍCIO 5.8
-p = int(input("Primeiro número:"))
-s = int(input("Segundo número:"))
+p = int(input("Primeiro numero:"))
+s = int(input("Segundo numero:"))
 x = 1
 r = 0
 while x <= s:
@@ -69,96 +69,96 @@ print("%d / %d = %d (quociente) %d (resto)" % (dividendo,divisor,quociente,resto
 
 # INT. PROG. PYTHON CAP. 5 | EXERCÍCIO 5.10
 pontos = 0
-questão = 1
-while questão <= 3:
-     resposta = input("Resposta da questão %d: " % questão)
-     if questão == 1 and (resposta == "b" or resposta == "B"):
+questao = 1
+while questao <= 3:
+     resposta = input("Resposta da questao %d: " % questao)
+     if questao == 1 and (resposta == "b" or resposta == "B"):
          pontos = pontos + 1
-     if questão == 2 and (resposta == "a" or resposta == "A"):
+     if questao == 2 and (resposta == "a" or resposta == "A"):
          pontos = pontos + 1
-     if questão == 3 and (resposta == "d" or resposta == "D"):
+     if questao == 3 and (resposta == "d" or resposta == "D"):
          pontos = pontos + 1
-     questão += 1
+     questao += 1
 print("O aluno fez %d ponto(s)" % pontos)
-       
+
 # INT. PROG. PYTHON CAP. 5 | EXERCÍCIO 5.11
-depósito = float(input("Depósito inicial: "))
+deposito = float(input("Deposito inicial: "))
 taxa = float(input("Taxa de juros (Ex.: 3 para 3%): "))
-mês = 1
-saldo = depósito
-while mês <= 24:
+mes = 1
+saldo = deposito
+while mes <= 24:
     saldo = saldo + (saldo * (taxa / 100))
-    print ("Saldo do mês %d é de R$%5.2f." % (mês, saldo))
-    mês = mês + 1
-print ("O ganho obtido com os juros foi de R$%8.2f." % (saldo-depósito))
+    print ("Saldo do mes %d e de R$%5.2f." % (mes, saldo))
+    mes = mes + 1
+print ("O ganho obtido com os juros foi de R$%8.2f." % (saldo-deposito))
 
 # INT. PROG. PYTHON CAP. 5 | EXERCÍCIO 5.12
-depósito = float(input("Depósito inicial: "))
+deposito = float(input("Deposito inicial: "))
 taxa = float(input("Taxa de juros (Ex.: 3 para 3%): "))
-investimento = float(input("Depósito mensal:"))
-mês = 1
-saldo = depósito
-while mês <= 24:
+investimento = float(input("Deposito mensal:"))
+mes = 1
+saldo = deposito
+while mes <= 24:
     saldo = saldo + (saldo * (taxa / 100)) + investimento
-    print ("Saldo do mês %d é de R$%5.2f." % (mês, saldo))
-    mês = mês + 1
-print ("O ganho obtido com os juros foi de R$%8.2f." % (saldo-depósito))
+    print ("Saldo do mes %d e de R$%5.2f." % (mes, saldo))
+    mes = mes + 1
+print ("O ganho obtido com os juros foi de R$%8.2f." % (saldo-deposito))
 
 # INT. PROG. PYTHON CAP. 5 | EXERCÍCIO 5.13
-dívida = float(input("Dívida: "))
+divida = float(input("Divida: "))
 taxa = float(input("Juros (Ex.: 3 para 3%): "))
 pagamento = float(input("Pagamento mensal:"))
-mês = 1
-if (dívida * (taxa/100) > pagamento):
-    print("Sua dívida não será paga nunca, pois os juros são superiores ao pagamento mensal.")
+mes = 1
+if (divida * (taxa/100) > pagamento):
+    print("Sua divida nao sera paga nunca, pois os juros sao superiores ao pagamento mensal.")
 else:
-    saldo = dívida
+    saldo = divida
     juros_pago = 0
     while saldo > pagamento:
         juros = saldo * taxa / 100
         saldo = saldo + juros - pagamento
         juros_pago = juros_pago + juros
-        print ("Saldo da dívida no mês %d é de R$%6.2f." % (mês, saldo))
-        mês = mês + 1
-    print ("Para pagar uma dívida de R$%8.2f, a %5.2f %% de juros," % (dívida, taxa))
-    print ("você precisará de %d meses, pagando um total de R$%8.2f de juros." % (mês-1, juros_pago))
-    print ("No último mês, você teria um saldo residual de R$%8.2f a pagar." % (saldo))
+        print ("Saldo da divida no mes %d e de R$%6.2f." % (mes, saldo))
+        mes = mes + 1
+    print ("Para pagar uma divida de R$%8.2f, a %5.2f %% de juros," % (divida, taxa))
+    print ("voce precisara de %d meses, pagando um total de R$%8.2f de juros." % (mes-1, juros_pago))
+    print ("No ultimo mes, voce teria um saldo residual de R$%8.2f a pagar." % (saldo))
 
 # INT. PROG. PYTHON CAP. 5 | EXERCÍCIO 5.14
 soma = 0
 quantidade = 0
 while True:
-    n = int(input("Digite um número inteiro:"))
+    n = int(input("Digite um numero inteiro:"))
     if n==0:
         break;
     soma = soma + n
     quantidade = quantidade + 1
-print("Quantidade de números digitados:", quantidade)
+print("Quantidade de numeros digitados:", quantidade)
 print("Soma: ", soma)
-print("Média: %10.2f" % (soma/quantidade))
+print("Media: %10.2f" % (soma/quantidade))
 
 # INT. PROG. PYTHON CAP. 5 | EXERCÍCIO 5.15
 apagar = 0
 while True:
-    código = int(input("Código da mercadoria (0 para sair):"))
-    preço = 0
-    if código == 0:
+    codigo = int(input("Codigo da mercadoria (0 para sair):"))
+    preco = 0
+    if codigo == 0:
         break;
-    elif código == 1:
-        preço = 0.50
-    elif código == 2:
-        preço = 1.00
-    elif código == 3:
-        preço = 4.00
-    elif código == 5:
-        preço = 7.00
-    elif código == 9:
-        preço = 8.00
+    elif codigo == 1:
+        preco = 0.50
+    elif codigo == 2:
+        preco = 1.00
+    elif codigo == 3:
+        preco = 4.00
+    elif codigo == 5:
+        preco = 7.00
+    elif codigo == 9:
+        preco = 8.00
     else:
-        print("Código inválido!")
-    if preço != 0:
+        print("Codigo invalido!")
+    if preco != 0:
         quantidade = int(input("Quantidade:"))
-        apagar = apagar + (preço * quantidade)
+        apagar = apagar + (preco * quantidade)
 print("Total a pagar R$%8.2f" % apagar)
 
 # INT. PROG. PYTHON CAP. 5 | EXERCÍCIO 5.16
@@ -167,15 +167,15 @@ print("Total a pagar R$%8.2f" % apagar)
 
 # INT. PROG. PYTHON CAP. 5 | EXERCÍCIO 5.18
 valor = int(input("Digite o valor a pagar:"))
-cédulas = 0
+cedulas = 0
 atual = 100
 apagar = valor
 while True:
      if atual <= apagar:
          apagar -= atual
-         cédulas += 1
+         cedulas += 1
      else:
-         print("%d cédula(s) de R$%d" % (cédulas, atual))
+         print("%d cedula(s) de R$%d" % (cedulas, atual))
          if apagar == 0:
                break
          elif atual == 100:
@@ -188,22 +188,22 @@ while True:
             atual = 5
          elif atual == 5:
             atual = 1
-         cédulas = 0
+         cedulas = 0
 
 # INT. PROG. PYTHON CAP. 5 | EXERCÍCIO 5.19
 valor = float(input("Digite o valor a pagar:"))
-cédulas = 0
+cedulas = 0
 atual = 100
 apagar = valor
 while True:
      if atual <= apagar:
          apagar -= atual
-         cédulas += 1
+         cedulas += 1
      else:
          if atual >=1:
-            print("%d cédula(s) de R$%d" % (cédulas, atual))
+            print("%d cedula(s) de R$%d" % (cedulas, atual))
          else:
-            print("%d moeda(s) de R$%5.2f" % (cédulas, atual))
+            print("%d moeda(s) de R$%5.2f" % (cedulas, atual))
          if apagar <0.01:
                break
          elif atual == 100:
@@ -226,7 +226,7 @@ while True:
             atual = 0.02
          elif atual == 0.02:
             atual = 0.01
-         cédulas = 0
+         cedulas = 0
 
 # INT. PROG. PYTHON CAP. 5 | EXERCÍCIO 5.20
 
@@ -235,15 +235,15 @@ while True:
     valor = int(input("Digite o valor a pagar:"))
     if valor == 0:
         break
-    cédulas = 0
+    cedulas = 0
     atual = 50
     apagar = valor
     while True:
          if atual <= apagar:
              apagar -= atual
-             cédulas += 1
+             cedulas += 1
          else:
-             print("%d cédula(s) de R$%d" % (cédulas, atual))
+             print("%d cedula(s) de R$%d" % (cedulas, atual))
              if apagar == 0:
                    break
              if atual == 50:
@@ -254,7 +254,7 @@ while True:
                    atual = 5
              elif atual == 5:
                    atual = 1
-             cédulas = 0
+             cedulas = 0
 
 # INT. PROG. PYTHON CAP. 5 | EXERCÍCIO 5.22
 while True:
@@ -262,43 +262,43 @@ while True:
 
 Menu
 ----
-1 - Adição
-2 - Subtração
-3 - Divisão
-4 - Multiplicação
+1 - Adicao
+2 - Subtracao
+3 - Divisao
+4 - Multiplicacao
 5 - Sair
 
 """)
-    opção =int(input("Escolha uma opção:"))
-    if opção == 5:
+    opcao =int(input("Escolha uma opcao:"))
+    if opcao == 5:
         break
-    elif opção >=1 and opção <5:
+    elif opcao >=1 and opcao <5:
         n = int(input("Tabuada de:"))
         x = 1
         while x<=10:
-            if opção == 1:
+            if opcao == 1:
                 print("%d + %d = %d" % (n, x, n + x))
-            elif opção == 2:
+            elif opcao == 2:
                 print("%d - %d = %d" % (n, x, n - x))
-            elif opção == 3:
+            elif opcao == 3:
                 print("%d / %d = %5.4f" % (n, x, n / x))
-            elif opção == 4:
+            elif opcao == 4:
                 print("%d x %d = %d" % (n, x, n * x))
             x=x+1
     else:
-        print("Opção inválida!")
+        print("Opcao invalida!")
 
 # INT. PROG. PYTHON CAP. 5 | EXERCÍCIO 5.23
-n = int(input("Digite um número:"))
+n = int(input("Digite um numero:"))
 if n < 0:
-    print("Número inválido. Digite apenas valores positivos")
+    print("Numero invalido. Digite apenas valores positivos")
 if n == 0 or n == 1:
-    print("%d é um caso especial." % n)
+    print("%d e um caso especial." % n)
 else:
     if n == 2:
-        print("2 é primo")
+        print("2 e primo")
     elif n%2 == 0:
-        print("%d não é primo, pois 2 é o único número par primo." %n)
+        print("%d nao e primo, pois 2 e o unico numero par primo." %n)
     else:
         x = 3
         while(x < n):
@@ -306,14 +306,14 @@ else:
                 break
             x = x + 2
         if x == n:
-            print("%d é primo" % n)
+            print("%d e primo" % n)
         else:
-            print("%d não é primo, pois é divisível por %d" % (n, x))
+            print("%d nao e primo, pois e divisivel por %d" % (n, x))
 
 # INT. PROG. PYTHON CAP. 5 | EXERCÍCIO 5.24
-n = int(input("Digite um número:"))
+n = int(input("Digite um numero:"))
 if n < 0:
-    print("Número inválido. Digite apenas valores positivos")
+    print("Numero invalido. Digite apenas valores positivos")
 else:
     if n >= 1:
         print("2")
@@ -331,12 +331,12 @@ else:
             y = y + 2
 
 # INT. PROG. PYTHON CAP. 5 | EXERCÍCIO 5.25
-n=float(input("Digite um número para encontrar a sua raiz quadrada: "))
+n=float(input("Digite um numero para encontrar a sua raiz quadrada: "))
 b=2
 while abs(n-(b*b))>0.00001:
     p=(b+(n/b))/2
     b=p
-print ("A raiz quadrada de %d é aproximadamente %8.4f" % (n, p))
+print ("A raiz quadrada de %d e aproximadamente %8.4f" % (n, p))
 
 # INT. PROG. PYTHON CAP. 5 | EXERCÍCIO 5.26
 dividendo = int(input("Dividendo:"))
@@ -347,22 +347,22 @@ while x >= divisor:
     x = x - divisor
     quociente = quociente + 1
 resto = x
-print("O resto de %d / %d é %d" % (dividendo,divisor,resto))
+print("O resto de %d / %d e %d" % (dividendo,divisor,resto))
 
 # INT. PROG. PYTHON CAP. 5 | EXERCÍCIO 5.27
-s = input ("Digite o número a verificar, sem espaços:")
+s = input ("Digite o numero a verificar, sem espacos:")
 i = 0
 f = len(s)-1
 while f > i and s[i] == s[f]:
     f = f - 1
     i = i + 1
 if s[i] == s[f]:
-    print("%s é palíndromo" % s)
+    print("%s e palindromo" % s)
 else:
-    print("%s não é palíndromo" % s)
+    print("%s nao e palindromo" % s)
 
 # INT. PROG. PYTHON CAP. 5 | EXERCÍCIO 5.28
-n = int(input ("Digite o número a verificar:"))
+n = int(input ("Digite o numero a verificar:"))
 q = 0
 while 10 ** q < n:
     q = q + 1
@@ -381,6 +381,6 @@ while i > f:
     nf = int(nf / 10)
 
 if pi == pf:
-    print("%d é palíndromo" % n)
+    print("%d e palindromo" % n)
 else:
-    print("%d não é palíndromo" % n)
+    print("%d nao e palindromo" % n)
