@@ -110,7 +110,7 @@ taxa = float(input("Juros: "))
 pagamento = float(input("Pagamento mensal:"))
 mes = 1
 if (divida * (taxa/100) > pagamento):
-    print("Sua divida nao sera paga nunca, pois os juros sao superiores ao pagamento mensal.")
+    print("Voce nunca consiguira pagar sua divida, pois os juros sao superiores ao pagamento mensal.")
 else:
     saldo = divida
     juros_pago = 0
@@ -164,6 +164,29 @@ print("Total a pagar R$%8.2f" % apagar)
 # INT. PROG. PYTHON CAP. 5 | EXERCÍCIO 5.16
 
 # INT. PROG. PYTHON CAP. 5 | EXERCÍCIO 5.17
+valor=int(input("Digite o valor a pagar:"))
+cedulas=0
+atual=50
+apagar=valor
+while True:
+    if atual<=apagar:
+        apagar-=atual
+        cedulas+=1
+    else:
+        print("%d cedula(s) de R$%d" %(cedulas, atual))
+        if apagar==0:
+            break
+        if atual==50:
+            atual=20
+        elif atual ==20:
+            atual = 10
+        elif atual==10:
+            atual =5
+        elif atual==5:
+            atual=1
+        cedulas=0
+
+0 cedula(s) de R$50
 
 # INT. PROG. PYTHON CAP. 5 | EXERCÍCIO 5.18
 valor = int(input("Digite o valor a pagar:"))
@@ -229,6 +252,7 @@ while True:
          cedulas = 0
 
 # INT. PROG. PYTHON CAP. 5 | EXERCÍCIO 5.20
+ValueError: could not convert string to float: '0,001'
 
 # INT. PROG. PYTHON CAP. 5 | EXERCÍCIO 5.21
 while True:
