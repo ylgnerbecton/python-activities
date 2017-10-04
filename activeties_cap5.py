@@ -83,18 +83,18 @@ print("O aluno fez %d ponto(s)" % pontos)
 
 # INT. PROG. PYTHON CAP. 5 | EXERCÍCIO 5.11
 deposito = float(input("Deposito inicial: "))
-taxa = float(input("Taxa de juros (Ex.: 3 para 3%): "))
+taxa = float(input("Taxa de juros: "))
 mes = 1
 saldo = deposito
 while mes <= 24:
     saldo = saldo + (saldo * (taxa / 100))
     print ("Saldo do mes %d e de R$%5.2f." % (mes, saldo))
     mes = mes + 1
-print ("O ganho obtido com os juros foi de R$%8.2f." % (saldo-deposito))
+print ("O ganho obtido com os juros foi de R$%8.2f." % (saldo - deposito))
 
 # INT. PROG. PYTHON CAP. 5 | EXERCÍCIO 5.12
 deposito = float(input("Deposito inicial: "))
-taxa = float(input("Taxa de juros (Ex.: 3 para 3%): "))
+taxa = float(input("Taxa de juros: "))
 investimento = float(input("Deposito mensal:"))
 mes = 1
 saldo = deposito
@@ -102,11 +102,11 @@ while mes <= 24:
     saldo = saldo + (saldo * (taxa / 100)) + investimento
     print ("Saldo do mes %d e de R$%5.2f." % (mes, saldo))
     mes = mes + 1
-print ("O ganho obtido com os juros foi de R$%8.2f." % (saldo-deposito))
+print ("O ganho obtido com os juros foi de R$%8.2f." % (saldo - deposito))
 
 # INT. PROG. PYTHON CAP. 5 | EXERCÍCIO 5.13
 divida = float(input("Divida: "))
-taxa = float(input("Juros (Ex.: 3 para 3%): "))
+taxa = float(input("Juros: "))
 pagamento = float(input("Pagamento mensal:"))
 mes = 1
 if (divida * (taxa/100) > pagamento):
@@ -121,7 +121,7 @@ else:
         print ("Saldo da divida no mes %d e de R$%6.2f." % (mes, saldo))
         mes = mes + 1
     print ("Para pagar uma divida de R$%8.2f, a %5.2f %% de juros," % (divida, taxa))
-    print ("voce precisara de %d meses, pagando um total de R$%8.2f de juros." % (mes-1, juros_pago))
+    print ("voce precisara de %d meses, pagando um total de R$%8.2f de juros." % (mes - 1, juros_pago))
     print ("No ultimo mes, voce teria um saldo residual de R$%8.2f a pagar." % (saldo))
 
 # INT. PROG. PYTHON CAP. 5 | EXERCÍCIO 5.14
